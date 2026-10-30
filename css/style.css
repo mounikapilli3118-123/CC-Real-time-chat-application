@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #1976d2,
+        #42a5f5,
+        #90caf9
+    );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* Login box */
+
+.container {
+
+    width: 380px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.2);
+}
+
+
+/* Chat logo */
+
+.chat-logo {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 15px;
+
+    background: #1976d2;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 35px;
+}
+
+
+/* Title */
+
+h1 {
+
+    color: #1565c0;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Subtitle */
+
+.subtitle {
+
+    color: #777;
+
+    margin-bottom: 25px;
+
+    font-size: 15px;
+}
+
+
+/* Input */
+
+input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+/* Input focus */
+
+input:focus {
+
+    border-color: #1976d2;
+
+    box-shadow:
+        0 0 5px
+        rgba(25, 118, 210, 0.3);
+}
+
+
+/* Login button */
+
+button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #1976d2;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Button hover */
+
+button:hover {
+
+    background: #0d47a1;
+}
+
+
+/* Error message */
+
+#message {
+
+    margin-top: 15px;
+
+    color: red;
+
+    font-size: 14px;
+}
+
+
+/* Register */
+
+.account {
+
+    margin-top: 20px;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* Register link */
+
+.account a {
+
+    color: #1976d2;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.account a:hover {
+
+    text-decoration: underline;
+}

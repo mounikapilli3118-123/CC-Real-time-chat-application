@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>My Profile</title>
+
+    <!-- Profile CSS -->
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+<body>
+
+    <!-- Main profile container -->
+    <div class="profile-card">
+
+    <h2 id="userName">
+        Loading...
+    </h2>
+
+    <p id="userEmail">
+        Loading...
+    </p>
+
+    <p>
+        <strong>User ID:</strong>
+        <span id="userId">
+            Loading...
+        </span>
+    </p>
+
+    <hr>
+
+    <h3>Edit Name</h3>
+
+    <input
+        type="text"
+        id="nameInput"
+        placeholder="Enter your name"
+    >
+
+    <br><br>
+
+    <button id="saveBtn">
+        Save Changes
+    </button>
+
+    <p id="message"></p>
+
+</div>
+
+        <!-- Logout button -->
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+    <!-- Profile JavaScript -->
+    <script type="module" src="js/profile.js"></script>
+
+</body>
+
+</html>

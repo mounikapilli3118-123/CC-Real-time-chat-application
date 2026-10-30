@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Real-Time Chat Application</title>
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h2>💬 Real-Time Chat</h2>
+
+            <a href="index.html" class="active">
+                🏠 Home
+            </a>
+
+            <a href="messages.html">
+                💬 Messages
+            </a>
+
+            <a href="contacts.html">
+                👥 Contacts
+            </a>
+
+            <a href="notifications.html">
+                🔔 Notifications
+            </a>
+
+            <a href="profile.html">
+                👤 Profile
+            </a>
+
+            <a href="settings.html">
+                ⚙️ Settings
+            </a>
+
+            <a href="login.html">
+                🚪 Logout
+            </a>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Top Bar -->
+            <div class="topbar">
+
+                <div>
+
+                    <h1>
+                        Real-Time Chat Application
+                    </h1>
+
+                    <p>
+                        Connect and chat with your friends instantly
+                    </p>
+
+                </div>
+
+                <div class="user">
+
+                    👤
+
+                    <span id="userEmail">
+                        User
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Welcome -->
+            <section class="welcome">
+
+                <h2>
+                    Welcome Back! 👋
+                </h2>
+
+                <p>
+                    Stay connected and chat with your friends
+                    in real time.
+                </p>
+
+            </section>
+
+
+            <!-- Cards -->
+            <div class="cards">
+
+                <!-- Messages -->
+                <div class="card">
+
+                    <div class="icon">
+                        💬
+                    </div>
+
+                    <h3>
+                        Messages
+                    </h3>
+
+                    <p>
+                        Start a conversation
+                    </p>
+
+                    <a href="messages.html">
+                        Open Messages
+                    </a>
+
+                </div>
+
+
+                <!-- Contacts -->
+                <div class="card">
+
+                    <div class="icon">
+                        👥
+                    </div>
+
+                    <h3>
+                        Contacts
+                    </h3>
+
+                    <p>
+                        View your contacts
+                    </p>
+
+                    <a href="contacts.html">
+                        View Contacts
+                    </a>
+
+                </div>
+
+
+                <!-- Notifications -->
+                <div class="card">
+
+                    <div class="icon">
+                        🔔
+                    </div>
+
+                    <h3>
+                        Notifications
+                    </h3>
+
+                    <p>
+                        Check your notifications
+                    </p>
+
+                    <a href="notifications.html">
+                        View Notifications
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Recent Conversations -->
+            <section class="recent">
+
+                <h2>
+                    Recent Conversations
+                </h2>
+
+                <div id="usersList">
+
+                    <p>
+                        Loading users...
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- Dashboard JavaScript -->
+    <script type="module"
+            src="js/dashboard.js">
+    </script>
+
+    <!-- Online/Offline Status JavaScript -->
+    <script type="module"
+            src="js/status.js">
+    </script>
+
+</body>
+
+</html>

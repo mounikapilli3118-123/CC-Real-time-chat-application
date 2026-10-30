@@ -1,0 +1,350 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #0878e8;
+    --dark-blue: #0648a5;
+    --text: #18365e;
+    --muted: #72819a;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at 12% 18%, #b8dcff 0, transparent 27%),
+        radial-gradient(circle at 88% 82%, #b7d9ff 0, transparent 30%),
+        linear-gradient(135deg, #eaf4ff, #f7faff 55%, #e2efff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 30px 18px;
+    position: relative;
+}
+
+.background-decoration {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.48);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 12px 35px rgba(37, 111, 199, 0.10);
+    user-select: none;
+    pointer-events: none;
+}
+
+.bubble-one {
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    top: 17%;
+    font-size: 44px;
+    transform: rotate(-10deg);
+}
+
+.bubble-two {
+    width: 75px;
+    height: 75px;
+    right: 13%;
+    top: 24%;
+    font-size: 30px;
+    transform: rotate(8deg);
+}
+
+.bubble-three {
+    width: 115px;
+    height: 115px;
+    right: 10%;
+    bottom: 14%;
+    font-size: 48px;
+    transform: rotate(-8deg);
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    z-index: 1;
+}
+
+.login-card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.94);
+    padding: 38px 42px;
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    border-radius: 28px;
+    box-shadow:
+        0 25px 65px rgba(30, 77, 135, 0.14),
+        0 4px 14px rgba(30, 77, 135, 0.05);
+    text-align: center;
+}
+
+.brand-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 20px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #19a6ff, #0758d5);
+    color: white;
+    font-size: 38px;
+    text-decoration: none;
+    box-shadow: 0 12px 24px rgba(8, 120, 232, 0.25);
+}
+
+.login-card h1 {
+    color: #0759bd;
+    font-size: 32px;
+    font-weight: 750;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.feature-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    color: #46617f;
+    font-size: 12px;
+    background: #f0f7ff;
+    border: 1px solid #e0edfc;
+    padding: 11px 8px;
+    border-radius: 12px;
+    margin-bottom: 26px;
+}
+
+.feature-line > span:first-child {
+    color: #16b887;
+    font-size: 10px;
+}
+
+.feature-divider {
+    color: #c0cddd;
+    margin: 0 3px;
+}
+
+form {
+    text-align: left;
+}
+
+form label {
+    display: block;
+    font-weight: 650;
+    font-size: 14px;
+    color: #294767;
+    margin: 0 0 9px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    width: 100%;
+    height: 55px;
+    border: 1px solid #d7e2f0;
+    border-radius: 13px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    background: #fbfdff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-wrapper:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(8, 120, 232, 0.10);
+    background: white;
+}
+
+.input-wrapper > span {
+    color: #6483a8;
+    font-size: 17px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 15px;
+}
+
+.input-wrapper input::placeholder {
+    color: #9aa8ba;
+}
+
+.password-toggle {
+    border: none;
+    background: transparent;
+    color: #0878e8;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.forgot-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -7px;
+    margin-bottom: 23px;
+}
+
+.forgot-row a,
+.register-text a {
+    color: #0878e8;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.forgot-row a {
+    font-size: 13px;
+}
+
+.forgot-row a:hover,
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 55px;
+    border: none;
+    border-radius: 13px;
+    color: white;
+    background: linear-gradient(100deg, #1098f5, #0860d8);
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 9px 20px rgba(8, 104, 220, 0.22);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-button span {
+    font-size: 22px;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 13px 25px rgba(8, 104, 220, 0.30);
+}
+
+.login-button:disabled {
+    opacity: 0.7;
+    cursor: wait;
+    transform: none;
+}
+
+.message {
+    display: none;
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.message:not(:empty) {
+    display: block;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 26px 0 21px;
+    color: #93a3b8;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e6edf6;
+}
+
+.register-text {
+    color: #65768d;
+    font-size: 14px;
+}
+
+.footer-text {
+    margin-top: 25px;
+    font-size: 11px;
+    color: #98a6b9;
+}
+
+.page-footer {
+    text-align: center;
+    color: #8295ae;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+@media (max-width: 520px) {
+    body {
+        padding: 22px 14px;
+    }
+
+    .login-card {
+        padding: 30px 23px;
+        border-radius: 23px;
+    }
+
+    .login-card h1 {
+        font-size: 28px;
+    }
+
+    .brand-icon {
+        width: 68px;
+        height: 68px;
+        border-radius: 22px;
+    }
+
+    .bubble-one {
+        left: -25px;
+    }
+
+    .bubble-two {
+        right: -20px;
+    }
+
+    .bubble-three {
+        right: -35px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}

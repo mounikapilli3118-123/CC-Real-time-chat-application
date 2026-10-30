@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Settings</title>
+
+    <link rel="stylesheet"
+          href="css/settings.css">
+
+</head>
+
+<body>
+
+    <div class="settings-container">
+
+        <h1>⚙️ Settings</h1>
+
+        <div class="settings-card">
+
+            <h2>Account</h2>
+
+            <p>
+                Email:
+                <span id="userEmail">
+                    Loading...
+                </span>
+            </p>
+
+        </div>
+
+
+        <div class="settings-card">
+
+            <h2>Notifications</h2>
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    id="notificationToggle"
+                    checked
+                >
+
+                🔔 Enable Notifications
+
+            </label>
+
+        </div>
+
+
+        <div class="settings-card">
+
+            <h2>Account Actions</h2>
+
+            <button id="logoutBtn">
+                🚪 Logout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script
+        type="module"
+        src="js/settings.js">
+    </script>
+
+</body>
+
+</html>

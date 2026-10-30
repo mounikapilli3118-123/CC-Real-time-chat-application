@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Real-Time Chat Application</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="background-decoration bubble-one">💬</div>
+    <div class="background-decoration bubble-two">✉️</div>
+    <div class="background-decoration bubble-three">💭</div>
+
+    <main class="login-wrapper">
+
+        <section class="login-card">
+
+            <a class="brand-icon" href="login.html" aria-label="Chat home">
+                💬
+            </a>
+
+            <h1>Welcome Back!</h1>
+
+            <p class="subtitle">
+                Sign in and connect with your friends
+            </p>
+
+            <div class="feature-line">
+                <span>●</span> Real-time messaging
+                <span class="feature-divider">|</span>
+                <span>🔒</span> Secure login
+            </div>
+
+            <form id="loginForm">
+
+                <label for="email">Email Address</label>
+                <div class="input-wrapper">
+                    <span>✉</span>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <label for="password">Password</label>
+                <div class="input-wrapper">
+                    <span>🔒</span>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required>
+                    <button
+                        type="button"
+                        id="togglePassword"
+                        class="password-toggle"
+                        aria-label="Show password">
+                        Show
+                    </button>
+                </div>
+
+                <div class="forgot-row">
+                    <a href="forgot-password.html">Forgot Password?</a>
+                </div>
+
+                <button type="submit" id="loginBtn" class="login-button">
+                    Login to Chat <span>→</span>
+                </button>
+
+                <p id="message" class="message" role="status"></p>
+            </form>
+
+            <div class="separator">
+                <span>WELCOME TO YOUR CHAT SPACE</span>
+            </div>
+
+            <p class="register-text">
+                Don't have an account?
+                <a href="register.html">Create Account</a>
+            </p>
+
+            <p class="footer-text">
+                Connect instantly. Share moments. Stay together.
+            </p>
+
+        </section>
+
+        <p class="page-footer">
+            © 2026 Real-Time Chat Application
+        </p>
+
+    </main>
+
+    <script type="module" src="js/login.js"></script>
+
+    <script>
+        const passwordInput = document.getElementById("password");
+        const togglePassword = document.getElementById("togglePassword");
+
+        togglePassword.addEventListener("click", () => {
+            const isPassword = passwordInput.type === "password";
+
+            passwordInput.type = isPassword ? "text" : "password";
+            togglePassword.textContent = isPassword ? "Hide" : "Show";
+            togglePassword.setAttribute(
+                "aria-label",
+                isPassword ? "Hide password" : "Show password"
+            );
+        });
+    </script>
+</body>
+</html>

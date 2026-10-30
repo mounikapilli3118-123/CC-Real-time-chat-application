@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat Application</title>
+    <link rel="stylesheet" href="./css/messages.css">
+</head>
+<body>
+<div class="chat-app">
+
+    <aside class="sidebar">
+        <h2>💬 Messages</h2>
+        <input id="userSearch" type="text" placeholder="Search contacts...">
+        <div id="users">Loading contacts...</div>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="chat-area">
+        <header class="chat-header">
+            <div>
+                <h2 id="selectedUser">Select a contact</h2>
+                <p id="chatStatus">Choose a user to start chatting</p>
+            </div>
+            <div class="more-container">
+                <button id="moreBtn" class="icon-btn" type="button">⋮</button>
+                <div id="moreMenu" class="more-menu hidden">
+                    <button id="clearChatBtn" type="button">Clear conversation</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="message-search-area">
+            <input id="messageSearch" type="text"
+                   placeholder="Search messages in this conversation..." disabled>
+            <button id="clearSearchBtn" type="button">Clear</button>
+        </div>
+
+        <section id="messages" class="messages">
+            <p class="empty-message">Select a contact to view messages.</p>
+        </section>
+
+        <p id="typingStatus" class="typing-status"></p>
+
+        <div id="emojiPicker" class="emoji-picker hidden">
+            <button class="emoji-option" type="button">😀</button>
+            <button class="emoji-option" type="button">😂</button>
+            <button class="emoji-option" type="button">😍</button>
+            <button class="emoji-option" type="button">😊</button>
+            <button class="emoji-option" type="button">🥰</button>
+            <button class="emoji-option" type="button">👍</button>
+            <button class="emoji-option" type="button">❤️</button>
+            <button class="emoji-option" type="button">🎉</button>
+            <button class="emoji-option" type="button">🙏</button>
+        </div>
+
+        <footer class="message-composer">
+            <button id="emojiBtn" class="icon-btn" type="button" disabled>😊</button>
+            <button id="attachBtn" class="icon-btn" type="button" disabled>📎</button>
+            <input id="fileInput" type="file" hidden>
+            <input id="messageInput" type="text"
+                   placeholder="Select a contact to start chatting..." disabled>
+            <button id="sendBtn" class="send-btn" type="button" disabled>Send</button>
+        </footer>
+
+        <p id="statusMessage" class="status-message"></p>
+    </main>
+</div>
+
+<script type="module" src="./js/messages.js"></script>
+</body>
+</html>
+
+
